@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #login-container, #chat-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+#chat-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: absolute;
+  }
+  
+  #chat {
+    height: 550px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pesan yang dikirim oleh pengguna */
+/* Pesan yang dikirim oleh pengguna */
+.sent-message {
+    text-align: right;
+    background-color: #87f879;
+    color: #000000;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    float: right; /* Menyimpan pesan yang dikirim ke kanan */
+    clear: both; /* Pastikan tidak ada elemen lain yang menyentuhnya */
+  }
+  
+  /* Pesan yang diterima dari pengguna lain */
+  .received-message {
+    text-align: left;
+    background-color: #f2f2f2;
+    color: #000;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 5px 0;
+    padding: 10px;
+    clear: both;
+  }
+  
+  
+  /* Username yang berada di atas isi pesan */
+  .username {
+    font-weight: bold;
+    color: rgb(23, 0, 107);
+    margin-bottom: 5px;
+  }
+  
