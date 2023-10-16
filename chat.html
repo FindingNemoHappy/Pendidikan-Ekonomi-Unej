@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+
+        <!-- The CSS and JS file must be declared after the things above-->
+        <link rel="stylesheet" href="Chat/chat.css"/>
+
+        <title>Pendidikan Ekonomi | UNEJ</title>
+    </head>
+    <body>
+
+    <nav class="navbar">
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navbar-left">
+            <a href="index.html" class="unej"><img src="image/unej.png"></a>
+
+            <div class="search-box">
+                <img src="image/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center" id="menu-awal">
+            <ul>
+                <li><a href="index.html"><img src="image/home.png"> <span>Home</span></a></li>
+                <li><a href="jadwal.html"><img src="image/jobs.png"> <span>Jadwal</span></a></li>
+                <li><a href="#"><img src="image/notification.png"> <span>Informasi</span></a></li>
+                <li><a href="chat.html"  class="active-chat"><img src="image/message.png"> <span>ChatTime</span></a></li>
+            </ul>
+        </div>
+        <img class="search-box-icon" src="image/search.png">
+        <div class="navbar-right">
+            <div class="online">
+                <img src="image/user.png" class="nav-profile-img">
+            </div>
+        </div>
+    </nav>
+    <div id="login-container">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username">
+        <button id="login-button">Login</button>
+    </div>
+    <div id="chat-container" style="display: none;">
+        <h1>Chat Room</h1>
+        <div id="chat"></div>
+        <input type="text" id="message" placeholder="Type your message">
+        <button id="send-button">Send</button>
+    </div>
+    <!----------- navbar close---------------------->
+
+    <script type="text/javascript" src="Chat/chat.js"></script>
+    <script src="menu.js"></script>
+    </body>
+</html>
